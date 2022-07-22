@@ -21,7 +21,7 @@ class CreateArticleFragment: Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         _binding= FragmentCreateArticleBinding.inflate(layoutInflater,container,false)
-        articleViewModel= ViewModelProvider(this).get(ArticleViewModel::class.java)
+        articleViewModel= ViewModelProvider(this)[ArticleViewModel::class.java]
 
 
         return _binding?.root
